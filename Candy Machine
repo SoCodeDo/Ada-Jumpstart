@@ -1,0 +1,37 @@
+# This is my candy machine program from repl.it
+# I have not spent much time on github and want to learn more about how their version control works. 
+
+puts "Welcome to Sophie's Candy Machine!"
+puts "disclaimer: I can not virtually give you candy. This is just for fun!"
+puts "***"
+puts "How much money do you have?"
+
+money = gets.chomp.to_f
+
+if money >= 1.00
+  puts "***"
+  puts "Great! We have lots of options for you."
+elsif money < 1.00
+  puts "***"
+  puts "Get outta here! Put that money in a piggy bank!"
+end
+
+puts "*** Vending Machine***"
+puts "A $1.00 Snickers"
+puts "B $0.75 Hersheys Bar"
+puts "C $0.80 Sour Patch Kids"
+puts "D $0.50 Twizzlers"
+
+puts "***"
+puts "Please enter your choice here:"
+choice = gets.chomp
+
+if choice == "A" or choice == "a"
+  puts "Thanks for purchasing with Sophie's Candy Machine. Please take your candy and your  $ #{money-1.00} change."
+elsif choice == "B" or choice == "b"
+  puts "Thanks for purchasing with Sophie's Candy Machine. Please take your candy and your $ #{money-0.75} change."
+elsif choice == "C" or choice == "c"
+  puts "Thanks for purchasing with Sophie's Candy Machine. Please take your candy and your $ #{money-0.80} change."
+elsif choice == "D" or choice == "d"
+  puts "Thanks for purchasing with Sophie's Candy Machine. Please take your candy and your $ #{money-0.50} change."
+end
