@@ -16,7 +16,7 @@ elsif money < 1.00
   puts "Get outta here! Put that money in a piggy bank!"
 end
 
-puts "*** Vending Machine***"
+puts "*** Vending Machine ***"
 puts "A $1.00 Snickers"
 puts "B $0.75 Hersheys Bar"
 puts "C $0.80 Sour Patch Kids"
